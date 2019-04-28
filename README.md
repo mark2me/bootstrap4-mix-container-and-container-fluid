@@ -34,7 +34,7 @@ scss/mixins/_grid-framework.scss
 ```
 
 
-### rebuild
+### Rebuild
 Rebuild you need css file like `scss/bootstrap.scss`, `scss/bootstrap-reboot.scss` or `scss/bootstrap-frid.scss` 
 
 
