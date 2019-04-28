@@ -38,5 +38,5 @@ scss/mixins/_grid-framework.scss
 Rebuild you need css file like `scss/bootstrap.scss`, `scss/bootstrap-reboot.scss` or `scss/bootstrap-frid.scss` 
 
 
-# Usage
+### Usage
 Just add class `.col-full-l` or `.col-full-r` after class `col-*` like `class="col-lg-5 coll-full-l"`
