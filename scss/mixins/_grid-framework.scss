@@ -43,6 +43,23 @@
         .col#{$infix}-#{$i} {
           @include make-col($i, $columns);
         }
+
+        //-----  start -----//
+        @if ( $i < $columns ){
+            .col#{$infix}-#{$i}.col-full-l {
+                flex: inherit;
+                max-width: inherit;
+                margin-left: calc( ( 100vw - 100% ) / -2 );
+                width: calc( #{percentage( $i / $columns )} + ( 100vw - 100% ) / 2 );
+            }
+            .col#{$infix}-#{$i}.col-full-r {
+                flex: inherit;
+                max-width: inherit;
+                margin-right: calc( ( 100vw - 100% ) / -2 );
+                width: calc( #{percentage( $i / $columns )} + ( 100vw - 100% ) / 2 );
+            }
+        }
+        //----- end -----//
       }
 
       .order#{$infix}-first { order: -1; }
