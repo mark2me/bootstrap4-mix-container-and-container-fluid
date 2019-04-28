@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>bootstrap4-mix-container-and-container-fluid</title>
+<link href="scss/bootstrap.css" rel="stylesheet" type="text/css"/>
+<style type="text/css">
+.container{ background-color: #eee; text-align: center; }
+.col-1:nth-child(even){ background-color: #ddd;}
+[class*='col-']{ padding-top: 5px; padding-bottom: 5px;}
+.row + .row{ margin-top: 15px; }
+.green{ background-color: #91ff91; }
+.blue{ background-color: #79dcff; }
+.orange{ background-color: #ffb745; }
+</style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-1">col</div>
+            <div class="col-1">col</div>
+            <div class="col-1">col</div>
+            <div class="col-1">col</div>
+            <div class="col-1">col</div>
+            <div class="col-1">col</div>
+            <div class="col-1">col</div>
+            <div class="col-1">col</div>
+            <div class="col-1">col</div>
+            <div class="col-1">col</div>
+            <div class="col-1">col</div>
+            <div class="col-1">col</div>
+        </div>
+
+        <div class="row">
+            <div class="col-6 green">col-6</div>
+            <div class="col-6 col-full-r blue">col-6 .col-full-r</div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-7 col-full-l green">col-lg-7 .col-full-l</div>
+            <div class="col-12 col-lg-5 blue">col-lg-5</div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3 green">col-sm-3</div>
+            <div class="col-sm-5 blue">col-sm-5</div>
+            <div class="col-sm-4 orange col-full-r">col-sm-4 col-full-r</div>
+        </div>
+
+    </div>
+
+</body>
+</html>
